@@ -8,24 +8,22 @@ import { AngularFireModule} from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
 import { from } from 'rxjs';
 
-import { ProductComponent } from './product/product.component';
-import { CartComponent } from './cart/cart.component';
-import { ProductsComponent } from './products/products.component';
+//import { ProductComponent } from './product/product.component';
+//import { CartComponent } from './cart/cart.component';
+//import { ProductsComponent } from './products/products.component';
 //import { PageNotFoundComponent } from './page-not-found/components/page-not-found.component';
 //import { ProductDetailComponent } from './product-detail/components/product-detail.component';
 import { LayoutComponent } from './layout/layout.component';
 
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductComponent,
-    CartComponent,
-    ProductsComponent,
-    //PageNotFoundComponent,
     LayoutComponent
+
   ],
   imports: [
     BrowserModule,
@@ -33,7 +31,8 @@ import { CoreModule } from './core/core.module';
     AngularFireDatabaseModule,
     AppRoutingModule,
     SharedModule,
-    CoreModule
+    CoreModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
