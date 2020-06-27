@@ -6,18 +6,15 @@ import { AppComponent } from './app.component';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule} from 'angularfire2';
 import { AngularFireDatabaseModule} from 'angularfire2/database';
-import { from } from 'rxjs';
+import { HttpClientModule } from '@angular/common/http';
 
-//import { ProductComponent } from './product/product.component';
-//import { CartComponent } from './cart/cart.component';
-//import { ProductsComponent } from './products/products.component';
-//import { PageNotFoundComponent } from './page-not-found/components/page-not-found.component';
-//import { ProductDetailComponent } from './product-detail/components/product-detail.component';
+
 import { LayoutComponent } from './layout/layout.component';
 
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 @NgModule({
   declarations: [
@@ -32,7 +29,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     AppRoutingModule,
     SharedModule,
     CoreModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

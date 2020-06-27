@@ -14,6 +14,7 @@ export const environment = {
     appId: '1:105427065503:web:47c7db28ba211f97d9a0aa',
     measurementId: 'G-913DBWW3JT',
   },
+  url_api: 'https://platzi-store.herokuapp.com'
 };
 
 /*
