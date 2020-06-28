@@ -5,6 +5,7 @@ import { ProductFormComponent } from './components/product-form/product-form.com
 import { NavComponent } from './components/nav/nav.component';
 import { TableComponent } from './components/table/table.component';
 import { DashComponent } from './components/dash/dash.component';
+import { ProducsListComponent } from './components/producs-list/producs-list.component';
 
 const routes: Routes = [
 
@@ -23,6 +24,10 @@ const routes: Routes = [
       {
         path: 'dash',
         component: DashComponent
+      },
+      {
+        path: 'products',
+        component: ProducsListComponent
       },
 
     ]
