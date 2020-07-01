@@ -31,6 +31,17 @@
           </span>
         </div>
       </div>
+      <div class="col-sm">
+        <div class="box">
+          <h2>Contact</h2>
+          <mat-form-field >
+            <input style="color:white" matInput placeholder="Digite su correo" [formControl]="emailField" type="email">
+
+          </mat-form-field>
+         <button mat-raised-button color="primary" [disabled]="emailField.invalid" (click)="sendEmail()">Enviar</button>
+         
+        </div>
+      </div>
     </div>
   </div>
 </footer>

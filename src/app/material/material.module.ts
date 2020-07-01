@@ -19,6 +19,7 @@ import { MatSortModule } from '@angular/material/sort';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatMenuModule } from '@angular/material/menu';
 import { LayoutModule } from '@angular/cdk/layout';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 
 
@@ -42,6 +43,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatGridListModule,
     MatMenuModule,
     LayoutModule,
+    MatFormFieldModule,
 
   ],
   exports: [
@@ -61,6 +63,7 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatGridListModule,
     MatMenuModule,
     LayoutModule,
+    MatFormFieldModule,
   ]
 
 })
