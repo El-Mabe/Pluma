@@ -20,7 +20,7 @@
     <th mat-header-cell *matHeaderCellDef>Actions</th>
     <td mat-cell *matCellDef="let product">
       <div class="raised-button">
-        <button mat-raised-button color="primary">Editar</button>
+        <a mat-raised-button color="primary" [routerLink]="['edit', product.id]">Editar</a>
         <button mat-raised-button color="warn" (click)="delateProduct(product.id)" >Eliminar</button>
       </div>
       <!--
