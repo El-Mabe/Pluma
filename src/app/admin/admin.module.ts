@@ -14,8 +14,6 @@ import { DashComponent } from './components/dash/dash.component';
 
 import { ProducsListComponent } from './components/producs-list/producs-list.component';
 import { FormProductComponent } from './components/form-product/form-product.component';
-import { RegisterComponent } from './components/register/register.component';
-import { LoginComponent } from './components/login/login.component';
 import { ProductEditComponent } from './components/product-edit/product-edit.component';
 
 @NgModule({
@@ -26,8 +24,6 @@ import { ProductEditComponent } from './components/product-edit/product-edit.com
     DashComponent,
     ProducsListComponent,
     FormProductComponent,
-    RegisterComponent,
-    LoginComponent,
     ProductEditComponent,
   ],
   imports: [

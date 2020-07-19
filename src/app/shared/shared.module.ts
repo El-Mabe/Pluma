@@ -7,15 +7,18 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from './../material/material.module';
+import { OrderProductsPipe } from './pipes/order-products.pipe';
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    OrderProductsPipe
   ],
   exports: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    OrderProductsPipe
   ],
   imports: [
     CommonModule,
